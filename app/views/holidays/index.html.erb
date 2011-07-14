@@ -1,0 +1,83 @@
+	<div id="masthead">
+		
+		<div class="content_pad">	
+			<div id="content-header">
+			  <img src="/images/show_settings.png" />
+			  <h1>Holidays</h1>
+			  <h3>Listing holidays</h3>
+			  <div id="app-back-button">
+			    <%= link_to_function image_tag("/images/buttons/back.png",:border => 0), "history.back()" %>
+			  </div>
+			</div>		
+		</div> <!-- .content_pad -->
+		
+	</div> <!-- #masthead -->	
+	
+	<div id="content" class="xgrid">
+		
+		<% if permitted_to? :new,:holidays %>
+		<div id="inner-tab-menu">
+		  <ul>
+		    <li><%= link_to 'Add Holiday', new_holiday_path %> </li>
+		
+		  </ul>
+		</div>
+		<% end %>
+		
+		<div id="page-yield">
+		
+		  <% unless flash[:notice].nil? %>
+		    <p class="flash-msg"> <%= flash[:notice] %> </p>
+		  <% end %>
+		
+		  <div id="all_news">
+		    <table id="listing" align="center" width="100%" cellpadding="1" cellspacing="1">
+		      <tr class="tr-head">
+		      	<td width="5%"> Sl no.</td>
+		        <td>
+		          Title
+		        </td>
+		        <td>
+		          Holiday Date
+		        </td>
+		        <% if permitted_to? :destroy,:holidays %>
+		        <td>
+		          Action
+		        </td>
+		        <% end %>
+		      </tr>
+		      <tr class="tr-blank"></tr>
+		      <% @holidays.each_with_index do |r,i| %>
+		        
+		        <% link_value = r.title %>
+		        <tr class="tr-<%= cycle('odd', 'even') %>">
+		          <td class="col-1">
+		            <%= i+1 %>
+		          </td>
+		          <td style="padding: 5px 5px 5px 10px;">
+		            <%=  link_to link_value, :controller => 'holidays', :action => 'edit', :id => r.id%>
+		          </td>
+		         
+		          <td style="width:22%; padding: 5px 5px 5px 10px;">
+		              <%= r.dateofholiday %> 
+		          </td>
+		          <% if permitted_to? :destroy,:holidays %>
+		          <td style="width:18%; padding: 5px 5px 5px 10px;">
+		              <%= link_to 'Delete', r, :confirm => 'Are you sure want to delete this holidays?', :method => :delete %>
+		          </td>
+		          <% end %>
+		        </tr>
+		      <% end %>
+		
+		    </table>
+		        
+		  </div>
+		
+		</div>
+	</div> <!-- #content -->
+	
+	
+	
+	
+	
+	

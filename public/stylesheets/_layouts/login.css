@@ -1,0 +1,427 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code, sup,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td 
+{
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+padding: 0;
+margin: 0;
+border: 0;
+vertical-align: baseline
+}
+
+h1,h2,h3,
+h4,h5,h6		{ color: #111; margin-bottom: .75em; }
+
+h1 				{ font-size: 30px; line-height: 1em; }
+h2 				{ font-size: 24px; font-weight: normal; color: #222; margin-bottom: 1em }
+h3 				{ font-size: 16px; color: #333; line-height: 1; margin-bottom: .75em }
+h4 				{ font-size: 14px; color: #666; line-height: 1.25; margin-bottom: 1.25em }
+h5 				{ font-size: 12px; font-weight: bold; margin-bottom: 1.5em }
+h6 				{ font-size: 11px; font-weight: bold }
+
+p           	{ margin: 0 0 1.5em }
+p.last      	{ margin-bottom: 0 }
+img         	{ border: none; }
+
+ul, ol			{ margin-left: 28px; margin-bottom: 1.5em; }
+li ul,
+li ol			{ margin-top: 1em; }
+ul li			{ list-style-type: disc; }
+li				{ margin-bottom: .5em; }
+
+dl          	{ margin: 0 0 1.5em 0 }
+dl dt       	{ font-weight: bold }
+dd          	{ margin-left: 1.5em }
+
+abbr, 
+acronym     	{ border-bottom: 1px dotted #666 }
+address     	{ margin-top: 1.5em; font-style: italic }
+del         	{ color:#666 }
+sup				{ font-size: 9px; vertical-align:top; }
+
+a				{ color: #06C; text-decoration: none; }
+a:visited		{ color: #667 }
+a:focus, 
+a:hover     	{ text-decoration: underline; }
+
+blockquote  	{ margin: 1.5em; color: #666; font-style: italic }
+strong      	{ font-weight: bold }
+em,dfn      	{ font-style: italic; background: #ffc }
+dfn         	{ font-weight: bold }
+pre,code    	{ margin: 1.5em 0; white-space: pre }
+pre,code,tt 	{ font: 12px 'andale mono', 'monotype.com', 'lucida console', monospace; line-height: 1.5 } 
+tt         		{ display: block; margin: 1.5em 0; line-height: 1.5 }
+
+
+hr { border: none; border-bottom: 1px dotted #CCC; margin-bottom: 2em; margin-top: 1em; }
+
+table.data { width: 100%; border: 0; margin-bottom: 2em; border-collapse: collapse;  }
+
+	 table.data thead th
+	 {
+	 	font-size: 13px;
+		font-weight: bold;
+		text-align: left;
+		padding: 10px;
+		
+		background-color: #333;
+		
+		color: #FFF;
+		
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+	}	
+	
+	table.display thead th { background-color: #333 !important; }	
+	
+	table.data td { vertical-align: top; }
+	
+	table.data tbody tr td { background: #FFF; border-bottom: 1px dotted #DDD; }
+
+	table.data th { padding: 10px 0; }
+	table.data tbody td { padding: 10px; }
+	
+	table.data tr.even td { background: #F9F9F9; }
+	
+	table.data.stripe tr:nth-child(odd) td { background-color:#F6F6F6; }
+	table.data.stripe tr:nth-child(even) td { background-color:#FFF; }
+
+
+input 
+, textarea
+, select
+{
+	font-family: Verdana, 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+	font-size: 12px;
+	color: #424242;
+	padding: 6px;
+	border: 1px solid #CCC;
+	outline: none;
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;	
+	
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .15) inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15) inset;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15) inset;
+	
+	-moz-transition: border .2s linear, box-shadow .2s linear;
+	-webkit-transition: border .2s linear, -webkit-box-shadow .2s linear;
+}
+
+input:focus 
+, textarea:focus
+, select:focus
+{
+    border: 1px solid #80bfff;
+    
+    -moz-box-shadow: 0 0 3px #80bfff, 0 1px 2px rgba(0, 0, 0, .15) inset;
+    -webkit-box-shadow: 0 0 3px #80bfff, 0 1px 2px rgba(0, 0, 0, .15) inset;
+    box-shadow: 0 0 3px #80bfff, 0 1px 2px rgba(0, 0, 0, .15) inset;
+}
+
+.placeholder { color: #999; }
+
+/* -------------------------------------------------------------
+FORM
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.form { padding: 0; margin: 0; }
+.form .field { width: 100%; float: left; }
+.form .field_help { margin-left: 145px; font-size: 90%; color: #777; }
+.form label, 
+.form span.label { color: #444; margin-right: 10px; padding-right: 10px; width: 125px; display: block; float: left;  font-weight: bold; text-align: right; position: relative; top: 6px; }
+.form label em, 
+.form span.label em { position: absolute; right: 0; font-size: 120%; font-style: normal; color: #C00; }
+
+.form .upload { margin-bottom: -5em;}
+
+
+.form .buttonrow { float: left; margin-top: 1em; margin-bottom: 2.5em; margin-left: 145px; display: block; }
+.form .cancel { font-size: 11px; color: #C00; padding-left: 10px; }
+.form .field { margin-bottom: 1.5em; }
+.form .uploader { margin-bottom: .5em !important; }
+
+
+.form .phone_field input { margin-right: 0; }
+/*
+.form .xsmall { width: 50px; }
+.form .small { width: 100px; }
+.form .medium { width: 200px; }
+.form .large { width: 300px; }
+.form .xlarge { width: 400px; }
+*/
+
+/* Label top styles */
+.label-top .field label { width: 100%; display: block; text-align: left; }
+.label-top .field span.label { width: 100%; display: block; float: left; text-align: left; position: relative; }
+.label-top .field .field_help { margin-left: 0; font-size: 11px; }
+.label-top .buttonrow { margin-left: 0; }
+.label-top .selector { width: 100%; display: block; float: left; }
+
+.form div.controlset label, 
+.form div.controlset input { display: inline; float: none; }
+.form .controlset label {font-size: 11px; font-weight: normal !important; }
+.controlset { margin-bottom: 2.5em; float: left; }
+.controlset .controlset-pad { width: 300px; float: left;  }
+
+
+div.radio { top: 8px; }
+div.checker { top: 7px; }
+
+.btn,
+.btn-icon,
+.btn-mini
+{
+	background-repeat: repeat-x;
+	color: #FFF;	
+	font-weight: bold;
+	display: inline-block;	
+	text-decoration: none;
+	border-width: 1px;
+	border-style: solid;
+	padding: 0 15px 4px;
+	*padding: 0 7px 4px;
+	margin: 0;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+	-moz-box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+	-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#999999,direction=135,strength=2);
+	cursor: pointer;
+	position: relative;
+}
+	
+	/* Active/Click state */
+	.btn:active, .btn-icon:active, .btn-mini:active { top: 1px; }
+
+
+/* Sizes */
+.btn, .btn-icon { background-position: 0 -80px; font-size: 12px; height: 32px; line-height: 29px; }
+.btn.btn-small, .btn-icon.btn-small { background-position: 0 0; font-size: 10px; height: 26px; line-height: 23px; }
+.btn.btn-large, .btn-icon.btn-large { background-position: 0 -160px; font-size: 15px; height: 42px; line-height: 40px; }
+
+	/* Sizes - Line height for A buttons need to be different */
+	a.btn, a.btn-icon { height: 32px; line-height: 32px; padding-bottom: 0; }
+	a.btn.btn-small, a.btn-icon.btn-small { line-height: 26px; padding-bottom: 0; }
+	a.btn.btn-large, a.btn-icon.btn-large { line-height: 42px; padding-bottom: 0; }
+	
+
+/* Fix the button in IE7 :-( */
+*+html .btn, *+html .btn-icon { border-color: none ; border: 1px solid transparent; }
+
+
+
+/* Set default button colors */
+.btn, .btn-icon, .btn-mini,
+.btn:visited, .btn-icon:visited, .btn-mini:visited {  background-image: url(../images/bg-lite.png); background-color: #F90; border-color: #D58000; color: #FFF; }
+
+.btn:hover, .btn-icon:hover, .btn-mini:hover { background-color: #D58000; color: #FFF; }
+
+
+/* Colors */	
+.btn-pink,
+.btn-pink:visited { background-color: #FF0066; border-color: #DA0C59; }
+.btn-pink:hover { background-color: #DA0C59; }
+
+.btn-blue,
+.btn-blue:visited { background-color: #066ECD; border-color: #0561B4; }
+.btn-blue:hover { background-color: #0561B4; }
+
+.btn-red,
+.btn-red:visited { background-color: #E40001; border-color: #CC0000; }
+.btn-red:hover { background-color: #CC0000; }
+
+.btn-green,
+.btn-green:visited { background-color: #77B32F; border-color: #689C29; }
+.btn-green:hover { background-color: #689C29; }
+
+.btn-black,
+.btn-black:visited { background-color: #111; border-color: #000; }
+.btn-black:hover { background-color: #000; }
+
+.btn-purple,
+.btn-purple:visited { background-color: #7B0F75; border-color: #6A0D66; }
+.btn-purple:hover { background-color: #6A0D66; }
+
+.btn-navy,
+.btn-navy:visited { background-color: #002142; border-color: #00172F; }
+.btn-navy:hover { background-color: #00172F; }
+
+.btn-maroon,
+.btn-maroon:visited { background-color: #750000; border-color: #530000; }
+.btn-maroon:hover { background-color: #530000; }
+
+.btn-yellow,
+.btn-yellow:visited { background-color: #FFCC00; border-color: #D9AD01; }
+.btn-yellow:hover { background-color: #D9AD01; }
+
+.btn-teal,
+.btn-teal:visited { background-color: #39A7B6; border-color: #2E8794; }
+.btn-teal:hover { background-color: #2E8794; }
+
+.btn-orange,
+.btn-orange:visited { background-color: #F90; border-color: #D58000; color: #FFF; }
+.btn-orange:hover{ background-color: #D58000; color: #FFF; }
+
+.btn-grey,
+.btn-grey:visited  { background-color: #999; border-color: #888; color: #FFF; }
+.btn-grey:hover{ background-color: #888; color: #FFF; }
+
+
+/* Images Overlays - Gradient Effect */
+/* 50% Opacity for darker colors */
+.btn-blue,
+.btn-black,
+.btn-purple,
+.btn-navy,
+.btn-maroon,
+.btn-teal,
+.btn-grey { background-image: url(../images/bg-dark.png) !important; }
+
+
+/* 65% opacity for lighter colors */
+.btn-red,
+.btn-orange,
+.btn-green,
+.btn-yellow,
+.btn-pink { background-image: url(../images/bg-lite.png) !important; }
+
+
+
+/* Icon Button Styles */
+.btn-icon { padding-left: 32px !important; }
+*+html .btn-icon { padding-left: 20px !important; padding-right: 5px !important; }
+
+.btn-icon span
+{
+	background-image: url(../images/amp-btn-icon-sprite.png); 
+	background-repeat: no-repeat; 
+	background-position: 0 0; 
+	width: 16px; 
+	height: 16px; 
+	position: absolute; 
+	left: 6px; 
+	top: 6px;
+}
+
+	.btn-icon.btn-small span { top: 4px; }
+	.btn-icon.btn-large span { top: 12px; }
+	@-moz-document url-prefix() { .btn-icon span { left: -24px; top: 0px; } .btn-icon.btn-small span { top: -1px; } .btn-icon.btn-large span { top: 4px; } } 
+
+
+/* Mini Buttons */
+.btn-mini 
+{ 
+	background-position: 0 0; 
+	width: 32px; 
+	height: 26px !important; 
+	line-height: 500px !important; 
+	overflow: hidden;
+	padding: 0; 
+}
+
+	.btn-mini span 
+	{ 
+		background-image: url(../images/amp-btn-icon-sprite.png); 
+		background-repeat: no-repeat; 
+		display: block;
+		width: 16px; 
+		height: 16px;
+		line-height: 0;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -8px;
+		margin-top: -8px;
+	}
+	
+	
+/* Icon Classes */
+.btn-arrow-down span { background-position: -48px 0; }
+.btn-arrow-up span { background-position: -32px 0; }
+.btn-arrow-right span { background-position: -16px 0; }
+.btn-arrow-left span { background-position: 0 0; }
+.btn-comment span { background-position: -112px 0; }
+.btn-heart span { background-position: -96px 0; }
+.btn-star span { background-position: -80px 0; }
+.btn-cart span { background-position: -64px 0; }
+.btn-print span { background-position: -128px 0; }
+.btn-rss span { background-position: -144px 0; }
+.btn-person span { background-position: 0 -16px; }
+.btn-check span { background-position: -16px -16px; }
+.btn-dollar span { background-position: -32px -16px; }
+.btn-refresh span { background-position: -48px -16px; }
+.btn-home span { background-position: -64px -16px; }
+.btn-plus span { background-position: -80px -16px; }
+.btn-minus span { background-position: -96px -16px; }
+.btn-cross span { background-position: -112px -16px; }
+	
+	
+/* Transparent Button Styles */
+.btn-transparent, .btn-transparent:hover { background-image: url(../images/bg-lite.png); background-color: transparent; filter: none; border-color: transparent\0/; margin: 0 1em 0 0; }
+
+*+html .btn-transparent { border: none; }
+
+body { background: #1C1C1C; font: 12px/1.7em arial, sans-serif; margin: 75px; }
+
+#login { width: 400px; position: absolute; left: 50%; margin-left: -200px; }
+
+#login h1 { background: url("../../images/login/admin.png") no-repeat scroll 0 0 transparent; height: 32px; line-height: 801px; margin: 0 auto 0.75em; overflow: hidden; width: 107px; }
+
+#login_panel { background: #FFF;
+	width: 400px;
+	border: 1px solid #CCC;
+	overflow: hidden;
+	
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	
+	-moz-box-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	box-shadow: 1px 1px 1px rgba(0,0,0,.6);
+}
+
+#login_panel .login_fields { padding: 22px 15px 15px; }
+	#login_panel .login_fields input { width: 355px; }
+
+#login_panel .field { margin-bottom: 1.75em; }
+	#login_panel .field:last-child { margin-bottom: .85em; }
+	
+	#login_panel .field label { font-weight: bold; display: block; position: relative; font-size:14px; } 	
+		#login_panel .field label small { position: absolute; right: 0; top: -2px; }
+			#login_panel .field label small a { color: #999; }
+
+#login .login_actions { background: #E8E8E8; width: auto; padding: 15px; border-top: 1px dotted #CCC; }
+
+
+#notice {  background-color: #FFF1AB; border: 1px solid #999999; float: right; font-size: 12px; margin-right: 17px; margin-top: 3px; padding: 2px; text-align: center; width: 250px; }
+
+#checkbox_area { margin-bottom: 0.85em; width: 300px; }
+
+#checkbox_area input { margin: 0 4px 0 15px; padding: 0; }
+
+#checkbox_area label { display: inline; margin: 0; padding-left: 5px; font-size: 13px; font-weight: bold; }
+
+
+#help_forgot_pw { margin: 50px auto; text-align: center; width: 412px; }
+
+#help_forgot_pw a { color: #A2B12B; font-weight: bold; text-decoration: none; }
+
+#help_top { height: 1.5em; margin: 0 auto; width: 403px; }
+
+#help_top #help_link { float: right; color:#A2B12B;}
+
+#help_top #help_link a { color: #A2B12B; padding-right: 10px; }
+
+#powerby {color:#fff;}
+

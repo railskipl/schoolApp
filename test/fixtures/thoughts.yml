@@ -1,0 +1,7 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  today_thought: MyText
+
+two:
+  today_thought: MyText

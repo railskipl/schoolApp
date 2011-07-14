@@ -1,0 +1,27 @@
+	<div id="masthead">
+		
+		<div class="content_pad">
+			
+			<div id="content-header">
+			  <img src="/images/show_timetable.png" />
+			  <h1>Timetable</h1>
+			  <h3>Institutional Timetable</h3>
+			  <div id="app-back-button">
+			  <%= link_to_function image_tag("/images/buttons/back.png",:border => 0), "history.back()" %>
+			  </div>
+			</div>
+			
+		</div> <!-- .content_pad -->
+		
+	</div> <!-- #masthead -->	
+	
+	<div id="content" class="xgrid">
+		
+		<div id="page-yield">
+		  <div id="timetable">
+		    <%= render :partial=>"table" %>
+		</div>
+		</div>
+
+		
+	</div> <!-- #content -->

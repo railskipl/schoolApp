@@ -1,0 +1,51 @@
+	<div id="login">
+		<div style="text-align:center;">
+			 
+		      <%= image_tag  "/images/school-cloud.png" %>
+		   
+		</div>
+		<div id="help_top">
+    		<div id="help_link"><a href="http://www.schoolcloud.co.in/support" target="_blank">Help!</a></div>
+  		</div>
+		<div id="login_panel">
+		
+			<% form_for :user do |form| %>
+      			<div class="login_fields">
+      			<div class="field">
+        			<label for="username">Username</label>
+          			<%= form.text_field :username, :maxlength => 40%>
+        		</div>
+
+				<div class="field">
+        			<label for="password">Password</label>
+          			<%= form.password_field :password %>
+        		</div>
+			</div>
+	
+        	<div id="checkbox_area">
+          		<input type="checkbox" id="remember" />
+          		<label for="remember">Remember me</label>
+        	</div>
+       
+        	<div class="login_actions">
+          		<%= submit_tag "Login", :class => "btn btn-orange" %>
+          		<% if !flash.empty? %>
+          			<div id="notice"><%= flash[:notice] %></div>
+         		<% end %>
+        	</div>    
+
+    	</div>
+  	<% end %>
+  
+  
+     <div id="help_forgot_pw">
+    	<%= link_to "Help! I've Forgotten my Password?", :controller => "user", :action => "forgot_password" %>
+
+	</div>
+		
+		
+	<div id="powerby">&copy; Powered by Kunal Infotech Pvt Ltd</div>	
+	</div> <!-- #login_panel -->
+	
+			
+</div> <!-- #login -->

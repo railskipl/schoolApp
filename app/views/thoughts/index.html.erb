@@ -1,0 +1,56 @@
+	<div id="masthead">
+		
+		<div class="content_pad">	
+			<div id="content-header">
+			  <img src="/images/show_settings.png" />
+			  <h1>Thoughts</h1>
+			  <h3>Listing thoughts</h3>
+			  <div id="app-back-button">
+			    <%= link_to_function image_tag("/images/buttons/back.png",:border => 0), "history.back()" %>
+			  </div>
+			</div>		
+		</div> <!-- .content_pad -->
+		
+	</div> <!-- #masthead -->	
+	
+	<div id="content" class="xgrid">
+		<div id="page-yield">
+		
+		  <% unless flash[:notice].nil? %>
+		    <p class="flash-msg"> <%= flash[:notice] %> </p>
+		  <% end %>
+		
+		  <div id="all_news">
+		    <table id="listing" align="center" width="100%" cellpadding="1" cellspacing="1">
+		      <tr class="tr-head">
+		        <td>
+		          Title
+		        </td>
+		        
+		        <td>
+		          Posted
+		        </td>
+		      </tr>
+		      <tr class="tr-blank"></tr>
+		      <% @thoughts.each_with_index do |r,i| %>
+		        
+		        <% link_value = r.today_thought %>
+		        <tr class="tr-<%= cycle('odd', 'even') %>">
+		          
+		          <td class="col-3">
+		            <%=  link_to link_value, :controller => 'thoughts', :action => 'edit', :id => r.id%>
+		          </td>
+		         
+		          <td class="col-3">
+		            Posted on  <%= (r.created_at) %> 
+		          </td>
+		        </tr>
+		      <% end %>
+		
+		    </table>
+		        
+		  </div>
+		
+		</div>
+	</div> <!-- #content -->
+	

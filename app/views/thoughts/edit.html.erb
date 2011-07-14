@@ -1,0 +1,46 @@
+	<div id="masthead">
+		<div class="content_pad">	
+			<div id="content-header">
+			  <img src="/images/show_settings.png" />
+			  <h1>Thoughts</h1>
+			  <h3>Editing thought</h3>
+			  <div id="app-back-button">
+			    <%= link_to_function image_tag("/images/buttons/back.png",:border => 0), "history.back()" %>
+			  </div>
+			</div>		
+		</div> <!-- .content_pad -->
+		
+	</div> <!-- #masthead -->	
+	
+	<div id="content" class="xgrid">
+		
+	   <div id="page-yield">
+
+		<% form_for(@thought) do |f| %>
+		 <%= f.error_messages %>
+		
+		 <div id="add_thought_form">
+		  	<div class="thought_label_field">
+		        <label for="thought_content">Thoughts</label>
+		        <div><%= f.text_area :today_thought, :class=>'thought_content_text_field_bg' %></div>
+		      </div>
+		  
+		 </div>
+		  <p>
+		    <%= f.submit 'Update', :class=>'thought_button' %>
+		  </p>
+		<% end %>
+		
+		
+	 </div>
+		
+ </div> <!-- #content -->
+
+
+
+
+
+
+
+
+

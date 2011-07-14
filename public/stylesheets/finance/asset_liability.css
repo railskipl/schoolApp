@@ -1,0 +1,22 @@
+
+.link-box {
+    margin:10px 40px;
+    width:270px;
+    float:left;
+    height:80px;
+}
+.link-heading a {
+    color: #1574B4;
+    font-size: 16px;
+    font-weight: bold;
+}
+.link-descr {
+    margin-top:5px;
+    color:#666;
+    text-align:justify;
+}
+
+.box{
+    width:700px;
+    margin:0px auto;
+}

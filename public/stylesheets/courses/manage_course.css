@@ -1,0 +1,111 @@
+#radio-buttons{
+    margin:0;
+}
+
+#submit-button input{
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    background:#27292B none repeat scroll 0 0;
+    color:#FFFFFF;
+    font-family:arial;
+    font-size:14px;
+    font-weight:bold;
+    margin:0px auto;
+    float:left;
+    margin-top:35px;
+    padding:7px 12px;
+    border:none;
+    text-align:center;
+    width:80px;
+    cursor:pointer;
+}
+
+#category-list {
+    clear : both;
+    padding : 10px 0 40px 0px;
+    width:570px;
+    margin:0px auto;
+}
+
+#category-list .listeven{
+    background : #EEF2FD;
+    border-bottom:1px solid #BECFFB;
+    color : #444;
+    min-height : 1.5em; 
+    overflow: auto;
+    list-style-type : none;
+    padding : 0.5em 0 0 3em;
+    margin-bottom: 0;
+}
+
+#category-list .listodd{
+    background : #DFEAFF;
+    border-bottom:1px solid #BECFFB;
+    color : #444;
+    min-height : 1.5em;
+    overflow: auto;
+    list-style-type : none;
+    padding : 0.5em 0 0 3em;
+    margin-bottom: 0;
+}
+
+#category-list li.heading {
+    background : none;
+    font-weight : bold;
+    list-style-type : none;
+    color : #444;
+    height : 1.5em; width : 30em;
+    padding : 0.5em 0 0 5em;
+}
+#category-list li div {
+    float : left;
+}
+#category-list li div.category-name {
+    width : 350px;
+    font-weight: bold;
+    font-size:13px;
+}
+#category-list li div.category-edit,
+#category-list li div.category-delete {
+    font-size : 0.9em;
+    width : 50px;
+
+}
+#category-list li div a {
+    color : #000;
+    font-size:14px;
+    text-decoration: none;
+}
+#category-list li div a:hover {
+    color : #d00;
+    text-decoration: underline;
+}
+
+#inner-tab-menu ul li {
+    background-position: 0 0;
+    font-size: 13px;
+    height: 20px;
+    line-height: 23px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    background-repeat: repeat-x;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 15px 4px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background-color: #FF9900;
+    background-image: url("../../images/bg-lite.png");
+    border-color: #D58000;
+    color: #FFFFFF;
+}
+
+p{
+    font-size:13px;
+}

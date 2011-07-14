@@ -1,0 +1,21 @@
+	<div id="masthead">
+		
+		<div class="content_pad">
+			<div id="content-header">
+			  <img src="/images/admission/admission_page_logo.jpg" />
+			  <h1>Student info</h1>
+			  <h3>Previous years results overview</h3>
+			  <div id="app-back-button">
+			    <%= link_to_function image_tag("/images/buttons/back.png",:border => 0), "history.back()" %>
+			  </div>
+			</div>		
+		</div> <!-- .content_pad -->
+		
+	</div> <!-- #masthead -->	
+	
+	<div id="content" class="xgrid">
+		
+	<script type="text/javascript" src="/javascripts/swfobject.js"></script>
+	<%= @graph %>		
+		
+	</div> <!-- #content -->

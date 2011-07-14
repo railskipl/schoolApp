@@ -1,0 +1,24 @@
+	<div id="masthead">
+		
+		<div class="content_pad">
+			<div id="content-header">
+			  <img src="/images/student_details/student_details_logo.jpg" />
+			  <h1>Homework Results</h1>
+			  <h3>For <%= @homeworktype.name %> (Class: <%= @course.name %>)</h3>
+			  <div id="app-back-button">
+			    <%= link_to image_tag("/images/buttons/back.png", :border => 0), :back %>
+			  </div>
+			
+			</div>	
+		</div> <!-- .content_pad -->
+		
+	</div> <!-- #masthead -->	
+	
+	<div id="content" class="xgrid">
+		<div id="page-yield">
+		  <%= render :partial => "student_result_for_homeworktype" %>
+		</div>	
+	</div> <!-- #content -->
+	
+
+
