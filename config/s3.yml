@@ -1,15 +1,15 @@
 common: &common
-    access_key_id: AKIAIWWQF5REKTC4ZYGQ
-    secret_access_key: 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
+    access_key_id: 
+    secret_access_key: 
 
 development:
     <<: *common
-    bucket: schoolcl
+    bucket: 
 
 test:
     <<: *common
-    bucket: myapp-123-test
+    bucket:
 
 production:
     <<: *common
-    bucket: schoolcl
+    bucket: 
